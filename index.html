@@ -85,7 +85,7 @@ var cv = {
     "frameworks": [
       "TestNG",
       "Cucumber",
-      "POM",
+      "Rest-Assured",
       "Maven",
       "Jmeter"
     ],
@@ -189,8 +189,10 @@ var cv = {
 <p class="P1" style="display:inline">Contact Details: </p>
 <p class="personal_information_title"> phone:</p>
 <p class="personal_information"> {{cv.phones.mobile}}</p>
-<p class="personal_information_title"> email:</p>
-<p class="personal_information"> {{cv.linkedin[0]}}</p>
+<br/>
+<p class="personal_information_title"> Public profile:</p>
+<a class="personal_information" href= {{cv.linkedin[0]}}> {{cv.linkedin[0]}}</a>
+
 <br/>
 <br/>
 
