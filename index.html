@@ -59,8 +59,9 @@ var cv = {
   "phones": {
      "mobile": "+91 9650848524"
   },
-  "linkedin": [
+  "profiles": [
      "https://www.linkedin.com/in/engineermanmohansingh",
+     "https://stackoverflow.com/users/3928295/manmohan-singh"
  ],
   "objective": [
     "Mr. Manmohan is a QA engineer having 6 years of experience in IT industry. His career objective is to automate as much as possible and achieve freedom from repetitive tasks.",
@@ -187,11 +188,11 @@ var cv = {
 <p class="personal_information"> {{cv.name | uppercase}} {{cv.surname | uppercase}}</p>
 <br/>
 <p class="P1" style="display:inline">Contact Details: </p>
-<p class="personal_information_title"> phone:</p>
 <p class="personal_information"> {{cv.phones.mobile}}</p>
 <br/>
-<p class="personal_information_title"> Public profile:</p>
-<a class="personal_information" href= {{cv.linkedin[0]}}> {{cv.linkedin[0]}}</a>
+<p class="personal_information_title">Public profiles :</p>
+<a class="personal_information" href= {{cv.profiles[0]}}>Linkedin</a>
+<a class="personal_information" href= {{cv.profiles[1]}} align="right">Stackoverflow</a>
 
 <br/>
 <br/>
